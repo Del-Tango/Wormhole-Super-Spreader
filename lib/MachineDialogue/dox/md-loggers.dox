@@ -1,0 +1,3 @@
+# MachineDialogue - (LOGGERS)
+
+log_message          <log-level> <symbol optional-true> <message>

@@ -1,0 +1,10 @@
+# MachineDialogue - (GENERAL)
+
+add_apt_dependency                              <dependency-package>
+remove_apt_dependency                           <dependency-package>
+bind_controller_option_to_menu                  <menu-controller> <controller-option> <option-resource (function | controller)>
+bind_controller_option_to_action                <menu-controller> <controller-option> <option-resource (function | controller)>
+bind_controller_option                          <bind-target (to_menu | to_action)> <menu-controller> <controller-option> <option-resource (function | controller)>
+remove_all_menu_controller_option_keys          <menu-controller>
+remove_menu_controller                          <menu-controller>
+add_menu_controller                             <menu-controller> <controller-description>

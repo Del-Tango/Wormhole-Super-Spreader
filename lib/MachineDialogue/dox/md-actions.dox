@@ -1,0 +1,7 @@
+# MachineDialogue - (ACTIONS)
+
+action_back
+action_clear_log_file
+action_log_view_tail
+action_log_view_head
+action_log_view_more

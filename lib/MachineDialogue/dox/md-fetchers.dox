@@ -1,0 +1,14 @@
+# MachineDialogue - (FETCHERS)
+
+fetch_menu_controllers_with_extended_banner
+fetch_controller_option_id
+fetch_jump_keys
+fetch_action_keys
+fetch_all_menu_controller_options
+fetch_action_key_count
+fetch_action_key_regex_pattern
+fetch_menu_controllers
+fetch_set_log_levels
+fetch_ultimatum_from_user                           <Y/N-prompt>
+fetch_data_from_user                                <prompt>
+fetch_selection_from_user                           <prompt> <option1> <option2> ...

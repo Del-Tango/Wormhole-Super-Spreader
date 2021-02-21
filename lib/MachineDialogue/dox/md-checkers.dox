@@ -1,0 +1,31 @@
+# MachineDialogue - (CHECKERS)
+
+check_apt_dependency_set            <dependancy-package>
+check_required_privileges
+check_function_is_defined           <function-name>
+check_controller_option_exists      <menu-controller> <controller-option>
+check_string_matches_regex_pattern  <string> <regex-pattern>
+check_menu_controller_exists        <menu-controller>
+check_valid_action_key              <action-key>
+check_logging_on
+check_logging_off
+check_safety_on
+check_safety_off
+check_md_menu_banner_on
+check_md_menu_banner_off
+check_file_empty                    <file-path>
+check_directory_empty               <dir-path>
+check_flag_is_on                    <flag-value>
+check_flag_is_off                   <flag-value>
+check_identical_strings             <string1> <string2>
+check_file_exists                   <file-path>
+check_directory_exists              <dir-path>
+check_value_is_number               <value>
+check_valid_md5_checksum            <checksum-hash>
+check_valid_sha1_checksum           <checksum-hash>
+check_valid_sha256_checksum         <checksum-hash>
+check_valid_sha512_checksum         <checksum-hash>
+check_valid_checksum                <type> <checksum-hash>
+check_util_installed                <util-name>
+check_loglevel_set                  <log-level>
+check_item_in_set                   <item> <set-item1> <set-item2> ...

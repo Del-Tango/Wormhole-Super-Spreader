@@ -1,0 +1,12 @@
+# MachineDialogue - (DISPLAY)
+
+display_settings
+debug_msg           <message>
+done_msg            <message>
+ok_msg              <message>
+nok_msg             <message>
+qa_msg              <message>
+info_msg            <message>
+error_msg           <message>
+warning_msg         <message>
+symbol_msg          <message>
