@@ -96,8 +96,8 @@ function action_set_payload () {
 }
 
 function action_set_silent_flag_on () {
-    echo; qa_msg "Getting scared, are we?"
-    fetch_ultimatum_from_user "${YELLOW}Y/N${RESET}"
+    echo; fetch_ultimatum_from_user \
+        "${YELLOW}Are you sure about this? Y/N${RESET}"
     if [ $? -ne 0 ]; then
         echo; info_msg "Aborting action."
         return 1
@@ -116,8 +116,8 @@ function action_set_silent_flag_on () {
 }
 
 function action_set_silent_flag_off () {
-    echo; qa_msg "Taking off the training wheels. Are you sure about this?"
-    fetch_ultimatum_from_user "${YELLOW}Y/N${RESET}"
+    echo; fetch_ultimatum_from_user \
+        "${YELLOW}Are you sure about this? Y/N${RESET}"
     if [ $? -ne 0 ]; then
         echo; info_msg "Aborting action."
     fi
